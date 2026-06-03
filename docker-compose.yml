@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: fitzone-db
+    restart: always
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: fitzone
+    ports:
+      - "3309:3306"
+    volumes:
+      - ./fitzone.sql:/docker-entrypoint-initdb.d/init.sql
+
+  web:
+    build: .
+    container_name: fitzone-web
+    restart: always
+    ports:
+      - "8000:80"
+    environment:
+      DB_HOST: db
+      DB_USER: root
+      DB_PASSWORD: ""
+      DB_NAME: fitzone
+    volumes:
+      - .:/var/www/html/
+    depends_on:
+      - db
