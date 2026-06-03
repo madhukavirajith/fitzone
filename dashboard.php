@@ -40,6 +40,7 @@ $app_result = $app_stmt->get_result();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Customer Dashboard | FitZone</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="stylesheet" href="css/styles.css"> 
   <script src="js/scripts.js" defer></script> 
 </head>
@@ -48,7 +49,7 @@ $app_result = $app_stmt->get_result();
   <!-- Header Section -->
   <header>
     <div class="logo">
-      <img src="images/logo.webp" alt="FitZone Logo">
+      <img src="images/logo.png" alt="FitZone Logo">
     </div>
     <nav>
       <ul>

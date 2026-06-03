@@ -48,6 +48,7 @@ $stat_queries = $conn->query("SELECT COUNT(*) AS count FROM queries WHERE admin_
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Staff/Admin Portal Dashboard | FitZone</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -55,7 +56,7 @@ $stat_queries = $conn->query("SELECT COUNT(*) AS count FROM queries WHERE admin_
   <!-- Header Section -->
   <header>
     <div class="logo">
-      <img src="images/logo.webp" alt="FitZone Logo">
+      <img src="images/logo.png" alt="FitZone Logo">
     </div>
     <div style="text-align: right; color: var(--text-white);">
       <h3 style="font-size: 16px; margin: 0; font-family: var(--font-heading); font-weight: 600;">Welcome, <?php echo htmlspecialchars($username); ?></h3>

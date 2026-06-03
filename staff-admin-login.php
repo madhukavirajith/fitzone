@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Staff & Admin Portal | FitZone</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="stylesheet" href="css/styles.css"> 
 </head>
 <body>
@@ -11,7 +12,7 @@
   <!-- Header -->
   <header>
     <div class="logo">
-      <img src="images/logo.webp" alt="FitZone Logo">
+      <img src="images/logo.png" alt="FitZone Logo">
     </div>
     <nav>
       <ul>
